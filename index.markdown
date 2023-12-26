@@ -4,3 +4,4 @@
 
 layout: home
 ---
+Hi this is my site
