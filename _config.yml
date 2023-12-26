@@ -30,9 +30,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Nate-Ryan
 
 # Build settings
-theme: jekyll-theme-experiment-master
+theme: jekyll-theme-experiment
 plugins:
   - jekyll-feed
+
+
+
+header_pages:
+  - home.md
+  - portfolio.md
+  - blog.md
+  - projects.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
