@@ -31,11 +31,11 @@ github_username:  Nate-Ryan
 
 
 # Build settings
-theme: jekyll-remote-theme
 remote_theme: daviddarnes/alembic@main
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 
 
