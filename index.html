@@ -1,259 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Nathan Ryan's Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-
-
+    <title>Nathan Ryan's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+    <style>
+        body {
+            color: #ffffff; /* Increased contrast for body text */
+            font-size: 18px; /* Uniform increase in base font size */
+            line-height: 1.6; /* Improve line spacing for readability */
+        }
+        h1 {
+            font-size: 2.5em; /* Increased size for h1 */
+        }
+        h2 {
+            font-size: 2em; /* Increased size for h2 */
+        }
+        h3 {
+            font-size: 1.75em; /* Increased size for h3 */
+        }
+        h4 {
+            font-size: 1.5em; /* Increased size for h4 */
+        }
+        h5 {
+            font-size: 1.25em; /* Increased size for h5 */
+        }
+        h6 {
+            font-size: 1em; /* Increased size for h6 */
+        }
+        .site-heading, .section-heading {
+            color: #ffffff; /* Ensure text is readable on dark backgrounds */
+        }
+        a {
+            color: #ffcc00; /* Contrasting color for links */
+            font-size: 18px; /* Increased font size for links */
+        }
+        a:hover {
+            color: #ffffff; /* Change link color on hover */
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <section class="site-hero" style="background-image: url(images/C17Project1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center pt-5">
+                    <h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Nathan Ryan</strong></h1>
+                    <strong class="d-block text-white text-uppercase letter-spacing">and this is My Resume</strong>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
-
-		<div class="container">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-
-			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-resume">Portfolio</a></li>
-					<li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
-					<!--<li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>-->
-					
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-
-
-
-	<section class="site-hero" style="background-image: url(images/C17Project1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row intro-text align-items-center justify-content-center">
-				<div class="col-md-10 text-center pt-5">
-
-					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Nathan Ryan</strong></h1>
-					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Resume</strong>
-
-				</div>
-			</div>
-		</div>
-	</section> <!-- section -->
-
-
-
-
-
-
-	<section class="site-section" id="section-portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading text-center col-md-12">
-					<h1>Featured <strong>Portfolio</strong></h1>
-					<div></div>
-				</div>
-			</div>
-			<div class="filters">
-				<ul>
-					<li class="active" data-filter="*">All</li>
-					<li data-filter=".CAD">CAD</li>
-					<li data-filter=".Blender">Blender</li>
-				</ul>
-			</div>
-	
-			<div class="filters-content">
-				<div class="row grid">
-					<!-- First Row -->
-					<div class="col-md-4 col-sm-6 single-portfolio all Blender">
-						<div class="relative">
-							<div class="thumb">
-								<img class="image img-fluid" src="images/coffee1.jpg" alt="">
-							</div>
-							<a href="Project Posts/Coffee Shop.html" class="img-pop-up">
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>
-						</div>
-						<div class="p-inner">
-							<h4>Coffee Shop Still Image</h4>
-							<div class="cat">Blender</div>
-						</div>
-					</div>
-	
-					<div class="col-md-4 col-sm-6 single-portfolio all CAD">
-						<div class="relative">
-							<div class="thumb">
-								<img class="image img-fluid" src="images/IMG_4063.jpeg" alt="">
-							</div>
-							<a href="../Nate-Ryan.github.io/Project Posts/ESC.html" class="img-pop-up">
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>
-						</div>
-						<div class="p-inner">
-							<h4>ESC Keychains & Tokens</h4>
-							<div class="cat">Blender</div>
-						</div>
-					</div>
-	
-					<div class="col-md-4 col-sm-6 single-portfolio all CAD">
-						<div class="relative">
-							<div class="thumb">
-								<img class="image img-fluid" src="images/carfin3.jpg" alt="">
-							</div>
-							<a href="../Nate-Ryan.github.io/Project Posts/Car_Antenna.html" class="img-pop-up">
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>
-						</div>
-						<div class="p-inner">
-							<h4>Replacement Antenna Cover for Car</h4>
-							<div class="cat">CAD</div>
-						</div>
-					</div>
-	
-					<!-- Second Row -->
-					<div class="col-md-4 col-sm-6 single-portfolio all CAD">
-						<div class="relative">
-							<div class="thumb">
-								<img class="image img-fluid" src="images/c17panel1.jpg" alt="">
-							</div>
-							<a href="../Nate-Ryan.github.io/Project Posts/C17.html" class="img-pop-up">
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>
-						</div>
-						<div class="p-inner">
-							<h4>C17 - Mobile Hospital</h4>
-							<div class="cat">CAD</div>
-						</div>
-					</div>
-	
-					<div class="col-md-4 col-sm-6 single-portfolio all CAD">
-						<div class="relative">
-							<div class="thumb">
-								<img class="image img-fluid" src="images/IMG_4096.jpg" alt="">
-							</div>
-							<a href="../Nate-Ryan.github.io/Project Posts/PokerChips.html" class="img-pop-up">
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>
-						</div>
-						<div class="p-inner">
-							<h4>Poker Chips</h4>
-							<div class="cat">CAD</div>
-						</div>
-					</div>
-	
-					<div class="col-md-4 col-sm-6 single-portfolio all CAD">
-						<div class="relative">
-							<div class="thumb">
-								<img class="image img-fluid" src="images/IMG_4113.jpg" alt="">
-							</div>
-							<a href="../Nate-Ryan.github.io/Project Posts/CookieCutters.html" class="img-pop-up">
-								<div class="middle">
-									<div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
-								</div>
-							</a>
-						</div>
-						<div class="p-inner">
-							<h4>Zippy Cookie Cutters</h4>
-							<div class="cat">CAD</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
+    <section class="site-section" id="section-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center col-md-12">
+                    <h1>Featured <strong>Portfolio</strong></h1>
+                    <div></div>
+                </div>
+            </div>
+            <div class="filters">
+                <ul>
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".CAD">CAD</li>
+                    <li data-filter=".Blender">Blender</li>
+                </ul>
+            </div>
+            <div class="filters-content">
+                <div class="row grid">
+                    <!-- First Row -->
+                    <div class="col-md-4 col-sm-6 single-portfolio all Blender">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="images/coffee1.jpg" alt="">
+                            </div>
+                            <a href="Project Posts/Coffee Shop.html" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Coffee Shop Still Image</h4>
+                            <div class="cat">Blender</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 single-portfolio all CAD">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="images/IMG_4063.jpeg" alt="">
+                            </div>
+                            <a href="../Nate-Ryan.github.io/Project Posts/ESC.html" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>ESC Keychains & Tokens</h4>
+                            <div class="cat">Blender</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 single-portfolio all CAD">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="images/carfin3.jpg" alt="">
+                            </div>
+                            <a href="../Nate-Ryan.github.io/Project Posts/Car_Antenna.html" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Replacement Antenna Cover for Car</h4>
+                            <div class="cat">CAD</div>
+                        </div>
+                    </div>
+                    <!-- Second Row -->
+                    <div class="col-md-4 col-sm-6 single-portfolio all CAD">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="images/c17panel1.jpg" alt="">
+                            </div>
+                            <a href="../Nate-Ryan.github.io/Project Posts/C17.html" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>C17 - Mobile Hospital</h4>
+                            <div class="cat">CAD</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 single-portfolio all CAD">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="images/IMG_4096.jpg" alt="">
+                            </div>
+                            <a href="../Nate-Ryan.github.io/Project Posts/PokerChips.html" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Poker Chips</h4>
+                            <div class="cat">CAD</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 single-portfolio all CAD">
+                        <div class="relative">
+                            <div class="thumb">
+                                <img class="image img-fluid" src="images/IMG_4113.jpg" alt="">
+                            </div>
+                            <a href="../Nate-Ryan.github.io/Project Posts/CookieCutters.html" class="img-pop-up">
+                                <div class="middle">
+                                    <div class="text align-self-center d-flex"><img src="images/preview.png" alt=""></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Zippy Cookie Cutters</h4>
+                            <div class="cat">CAD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<section class="site-section" id="section-resume">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center">
-						<a href="assets/NathanRyanResume.pdf"><h2>My <strong>Resume</strong></h2></a>
-						<div><a href="assets/NathanRyanResume.pdf"><h6>Click To Download Resume</h6></a></div>
+						<a href="assets/NathanRyanResume.pdf"><h2 style="font-size: 2em; color: #ffffff;">My <strong>Resume</strong></h2></a>
+						<div>
+							<a href="assets/NathanRyanResume.pdf"><h6 style="font-size: 1.25em; color: #ffcc00;">Click To Download Resume</h6></a>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<h2 class="mb-5">Education & Organizations</h2>
+					<h2 class="mb-5" style="font-size: 2em; color: #ffffff;">Education & Organizations</h2>
 	
 					<!-- Education & Organizations Section -->
 					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> August 2021 - Present</span>
-						<h3>B.S. Mechanical Engineering; Minor Business Essentials</h3>
-						<p>Focused on developing strong technical and business acumen through coursework and projects, while actively engaging in leadership roles within student organizations.</p>
-						<span class="school">The University of Akron</span>
+						<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> August 2021 - Present</span>
+						<h3 style="font-size: 1.75em; color: #ffffff;">B.S. Mechanical Engineering; Minor Business Essentials</h3>
+						<p style="font-size: 1.2em; color: #ffffff;">Focused on developing strong technical and business acumen through coursework and projects, while actively engaging in leadership roles within student organizations.</p>
+						<span class="school" style="font-size: 1.25em; color: #ffcc00;">The University of Akron</span>
 					</div>
 	
 					<div class="resume-item mb-4">
-						<h3>Engineering Student Council</h3>
+						<h3 style="font-size: 1.75em; color: #ffffff;">Engineering Student Council</h3>
 						<div>
-							<span class="date"><span class="icon-calendar"></span> August 2021 - May 2022</span>
-							<p>Freshman Council Member: Organized and led events to enhance student engagement, collaborating with peers to foster a stronger undergraduate community.</p>
+							<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> August 2021 - May 2022</span>
+							<p style="font-size: 1.2em; color: #ffffff;">Freshman Council Member: Organized and led events to enhance student engagement, collaborating with peers to foster a stronger undergraduate community.</p>
 						</div>
 						<div>
-							<span class="date"><span class="icon-calendar"></span> January 2023 - May 2024</span>
-							<p>Outreach Coordinator: Managed relationships with K-12 schools and community organizations. Led outreach and philanthropy efforts, including planning visits and organizing Engineering Week events each semester.</p>
+							<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> January 2023 - May 2024</span>
+							<p style="font-size: 1.2em; color: #ffffff;">Outreach Coordinator: Managed relationships with K-12 schools and community organizations. Led outreach and philanthropy efforts, including planning visits and organizing Engineering Week events each semester.</p>
 						</div>
 						<div>
-							<span class="date"><span class="icon-calendar"></span> August 2024 - May 2025</span>
-							<p>Secretary: Maintained Microsoft Teams and managed council communications, including event scheduling, membership tracking, and organizing all meeting records and agendas.</p>
+							<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> August 2024 - May 2025</span>
+							<p style="font-size: 1.2em; color: #ffffff;">Secretary: Maintained Microsoft Teams and managed council communications, including event scheduling, membership tracking, and organizing all meeting records and agendas.</p>
 						</div>
-						<span class="school">The University of Akron</span>
+						<span class="school" style="font-size: 1.25em; color: #ffcc00;">The University of Akron</span>
 					</div>
 	
 					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> May 2023 - Present</span>
-						<h3>NAESC (National Association of Engineering Student Councils)</h3>
+						<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> May 2023 - Present</span>
+						<h3 style="font-size: 1.75em; color: #ffffff;">NAESC (National Association of Engineering Student Councils)</h3>
 						<div>
-							<span class="date"><span class="icon-calendar"></span> May 2023 - May 2024</span>
-							<p>Board of Directors Member: Guided the long-term vision of the organization, working alongside professionals to ensure financial and governance policies were followed. Played a key role in aligning the mission of the organization with its activities.</p>
+							<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> May 2023 - May 2024</span>
+							<p style="font-size: 1.2em; color: #ffffff;">Board of Directors Member: Guided the long-term vision of the organization, working alongside professionals to ensure financial and governance policies were followed. Played a key role in aligning the mission of the organization with its activities.</p>
 						</div>
 						<div>
-							<span class="date"><span class="icon-calendar"></span> May 2024 - Present</span>
-							<p>Vice President of Finance: Managed financial transactions, records, and reports for the non-profit. Led efforts in corporate sponsorships and supervised regional finance coordinators to ensure fiscal integrity.</p>
+							<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> May 2024 - Present</span>
+							<p style="font-size: 1.2em; color: #ffffff;">Vice President of Finance: Managed financial transactions, records, and reports for the non-profit. Led efforts in corporate sponsorships and supervised regional finance coordinators to ensure fiscal integrity.</p>
 						</div>
-						<span class="school">The University of Akron</span>
+						<span class="school" style="font-size: 1.25em; color: #ffcc00;">The University of Akron</span>
 					</div>
 	
 				</div>
 				<div class="col-md-6">
-					<h2 class="mb-5">Experience</h2>
+					<h2 class="mb-5" style="font-size: 2em; color: #ffffff;">Experience</h2>
 	
 					<!-- Experience Section -->
 					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> May 2023 - August 2023 & May 2024 - Present</span>
-						<h3>Product Engineer</h3>
+						<span class="date" style="font-size: 1.25em; color: #ffcc00;"><span class="icon-calendar"></span> May 2023 - August 2023 & May 2024 - Present</span>
+						<h3 style="font-size: 1.75em; color: #ffffff;">Product Engineer</h3>
 						<div>
-							<p>• Analyzed product scrap rates to identify recurring issues and developed solutions through CAD, procedural improvements, and experimental trials.<br>
+							<p style="font-size: 1.2em; color: #ffffff;">• Analyzed product scrap rates to identify recurring issues and developed solutions through CAD, procedural improvements, and experimental trials.<br>
 							   • Led the co-op team for a critical inventory project, achieving cost savings by optimizing manufacturing processes and restoring inventory.<br>
 							   • Strengthened communication skills through participation in daily and weekly engineering meetings.<br>
 							   • Collaborated with customers to enhance product quality and ensure reliable production outcomes.</p>
 						</div>
-						<span class="school">PCC Airfoils, Minerva OH</span>
+						<span class="school" style="font-size: 1.25em; color: #ffcc00;">PCC Airfoils, Minerva OH</span>
 					</div>
 	
 				</div>
@@ -261,7 +270,6 @@
 		</div>
 	</section> <!-- .section -->
 	
-
 	<section class="site-section" id="section-about">
 		<div class="container">
 			<div class="row mb-5 align-items-center">
@@ -270,20 +278,13 @@
 				</div>
 				<div class="col-lg-5 pl-lg-5">
 					<div class="section-heading">
-						<h2>About <strong>Me</strong></h2>
+						<h2 style="font-size: 2em; color: #ffffff;">About <strong>Me</strong></h2>
 					</div>
-					<p class="lead">Just a kid from Akron with a love for golf and problem solving </p>
-					<p class="mb-5  ">Born and raised in Akron with a golf club in my hand the whole way. I have pursued engineering programs and classes since 5th grade and still love the process of finding and solving problems. I am a 3d modeling / 3d printing freelancer that loves to find creative solutions for those around me.</p>
-					<p class="mb-5"> When I am not working or at school I am most likely golfing, going for a hike / run, or teaching myself a new program / tool to use.
-
-					<p>
-						<!--<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
-						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
-					</p>-->
+					<p class="lead" style="font-size: 1.25em; color: #ffffff;">Just a kid from Akron with a love for golf and problem solving</p>
+					<p class="mb-5" style="font-size: 1.2em; color: #ffffff;">Born and raised in Akron with a golf club in my hand the whole way. I have pursued engineering programs and classes since 5th grade and still love the process of finding and solving problems. I am a 3D modeling / 3D printing freelancer that loves to find creative solutions for those around me.</p>
+					<p class="mb-5" style="font-size: 1.2em; color: #ffffff;">When I am not working or at school I am most likely golfing, going for a hike / run, or teaching myself a new program / tool to use.</p>
 				</div>
 			</div>
-
-
 		</div>
 	</section>
 	<section class="site-section" id="section-contact">
@@ -291,39 +292,39 @@
 			<div class="row">
 				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center">
-						<h2>Get <strong>In Touch</strong></h2>
+						<h2 style="font-size: 2em; color: #ffffff;">Get <strong>In Touch</strong></h2>
 					</div>
 				</div>
-
+	
 				<div class="col-md-7 mb-5 mb-md-0">
 					<form action="http://formspree.io/ncr24@uakron.edu" method="POST">
-						<h3 class="mb-5">Get In Touch</h3>
+						<h3 class="mb-5" style="font-size: 1.75em; color: #ffffff;">Get In Touch</h3>
 						<div class="form-group">
-							<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name" required>
+							<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name" required style="font-size: 1.2em;">
 						</div>
 						<div class="form-group">
-							<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email" required>
+							<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email" required style="font-size: 1.2em;">
 						</div>
 						<div class="form-group">
-							<input type="tel" name="phone" class="form-control px-3 py-4" placeholder="Your Phone" required>
+							<input type="tel" name="phone" class="form-control px-3 py-4" placeholder="Your Phone" required style="font-size: 1.2em;">
 						</div>
 						<div class="form-group mb-5">
-							<textarea name="message" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Your Message" required></textarea>
+							<textarea name="message" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Your Message" required style="font-size: 1.2em;"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" class="btn btn-primary px-4 py-3" value="Send Message">
+							<input type="submit" class="btn btn-primary px-4 py-3" value="Send Message" style="font-size: 1.2em;">
 						</div>
 					</form>					
 				</div>
 				<div class="col-md-5 pl-md-5">
-					<h3 class="mb-5">My Contact Details</h3>
+					<h3 class="mb-5" style="font-size: 1.75em; color: #ffffff;">My Contact Details</h3>
 					<ul class="site-contact-details">
-						<li>
-							<span class="text-uppercase">Email</span>
+						<li style="font-size: 1.25em; color: #ffffff;">
+							<span class="text-uppercase" style="color: #ffcc00;">Email</span>
 							ncr24@uakron.edu
 						</li>
-						<li>
-							<span class="text-uppercase">Phone</span>
+						<li style="font-size: 1.25em; color: #ffffff;">
+							<span class="text-uppercase" style="color: #ffcc00;">Phone</span>
 							+1 (330)-734-5929
 						</li>
 					</ul>
@@ -331,33 +332,30 @@
 			</div>
 		</div>
 	</section>
-
-
+	
 	<footer class="site-footer">
 		<div class="container">
-
 			<div class="row mb-5">
-				<p class="col-12 text-center">
+				<p class="col-12 text-center" style="font-size: 1.2em; color: #ffffff;">
 					<!--Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary" style="color: #ffcc00;">Colorlib</a>
 					<!--Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</p>
 			</div>
 			<div class="row mb-5">
 				<div class="col-md-12 text-center">
 					<p>
-						<a href="#" class="social-item"><span class="icon-facebook2"></span></a>
-						<a href="#" class="social-item"><span class="icon-twitter"></span></a>
-						<a href="#" class="social-item"><span class="icon-instagram2"></span></a>
-						<a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
-						<a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+						<a href="#" class="social-item" style="font-size: 1.5em; color: #ffffff;"><span class="icon-facebook2"></span></a>
+						<a href="#" class="social-item" style="font-size: 1.5em; color: #ffffff;"><span class="icon-twitter"></span></a>
+						<a href="#" class="social-item" style="font-size: 1.5em; color: #ffffff;"><span class="icon-instagram2"></span></a>
+						<a href="#" class="social-item" style="font-size: 1.5em; color: #ffffff;"><span class="icon-linkedin2"></span></a>
+						<a href="#" class="social-item" style="font-size: 1.5em; color: #ffffff;"><span class="icon-vimeo"></span></a>
 					</p>
 				</div>
 			</div>
-			
 		</div>
 	</footer>
-
+	
 
 
 
