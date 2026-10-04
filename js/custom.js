@@ -32,7 +32,7 @@
 		$(".smoothscroll[href^='#'], #pb-navbar ul li a[href^='#']").on('click', function(e) {
 		 	e.preventDefault();
 		 	var hash = this.hash;
-		 		
+
 		 	$('html, body').animate({
 
 		    scrollTop: $(hash).offset().top
@@ -42,7 +42,12 @@
 		});
 		$("#pb-navbar ul li a[href^='#']").on('click', function(e){
 			if ( navToggler.is(':visible') ) {
-		  	navToggler.click();
+            var menu = $('#navbarsExample09');
+            if (menu.hasClass('collapsing')) {
+                menu.one('shown.bs.collapse', function() { menu.collapse('hide'); });
+            } else {
+                menu.collapse('hide');
+            }
 		  }
 		});
 
@@ -50,7 +55,7 @@
 		  console.log('nice');
 		})
 	};
-	
+
 
 	var offCanvasNav = function() {
 		// var toggleNav = $('.js-pb_nav-toggle'),
@@ -70,7 +75,7 @@
 		// 	e.preventDefault();
 		// })
 	};
-	
+
 
 
 	/*----------------------------------------
@@ -82,7 +87,7 @@
 		$('.site-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('site-animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -104,9 +109,9 @@
 							el.removeClass('item-animate');
 						},  k * 100, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -146,12 +151,12 @@
 
 
 
-		
+
 	};
 
-	
-	
-	
+
+
+
 	var siteStellar = function() {
 		$(window).stellar({
 	    responsive: true,
@@ -162,7 +167,7 @@
 	    scrollProperty: 'scroll'
 	  });
 	};
-	
+
 
 
 
@@ -203,7 +208,7 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
@@ -233,7 +238,7 @@
 			return false;
 		});
 	};
-	
+
 	var magnificPopupControl = function() {
 
 
@@ -292,11 +297,11 @@
 
 
 
-	var portfolioMasonry = function() {
+	var portfolioMasonry = function() { if (!$.fn.isotope) return;
  $('.filters ul li').click(function(){
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
-        
+
         var data = $(this).attr('data-filter');
         $grid.isotope({
           filter: data
@@ -324,13 +329,12 @@
 		offCanvasNav();
 		contentWayPoint();
 		navbarState();
-		clickMenu();
-		smoothScroll();
+
+
 		portfolioMasonry();
 	});
 
-	
+
 
 
 })();
-

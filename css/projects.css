@@ -1,0 +1,27 @@
+.project-page { color: #edf0f1; font-size: 18px; line-height: 1.7; }
+.project-page a { color: #cedc83; }
+.project-nav { padding-top: 24px; padding-bottom: 20px; }
+.project-header { padding: 32px 0 36px; max-width: 850px; }
+.project-eyebrow { color: #bac964; font-size: .85rem; letter-spacing: .06em; }
+.project-header h1 { font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 700; line-height: 1.15; }
+.project-summary { font-size: 1.2rem; margin-top: 20px; margin-bottom: 0; }
+.project-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; padding-bottom: 64px; align-items: start; }
+.project-figure { margin: 0 0 28px; }
+.project-image-link { display: flex; justify-content: center; align-items: center; background: #2c2c2c; padding: 16px; border-radius: 8px; }
+.project-figure img { display: block; max-width: 100%; width: auto; height: auto; max-height: 540px; object-fit: contain; }
+.project-figure figcaption { color: #c7c9c9; font-size: .9rem; line-height: 1.5; padding-top: 12px; }
+.project-figure figcaption a { display: inline-block; margin-left: 6px; }
+.project-figure video { display: block; width: 100%; max-height: 540px; background: #111; border-radius: 8px; }
+.project-detail { margin-bottom: 28px; }
+.project-detail h2 { font-size: 1.4rem; color: #bac964; font-weight: 700; }
+.project-contact { margin-top: 32px; }
+.project-page .btn { white-space: normal; padding: 12px 22px; }
+.project-page .btn-primary { color: #202020; }
+.project-page .btn-secondary { color: #fff; }
+.project-page a:focus-visible { outline: 3px solid #ffcc00; outline-offset: 5px; }
+@media(max-width: 767px) {
+ .project-layout { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+ .project-header { padding-top: 20px; padding-bottom: 28px; }
+ .project-image-link { padding: 12px; }
+ .project-figure img { max-height: 420px; }
+}
